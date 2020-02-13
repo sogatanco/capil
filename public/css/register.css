@@ -1,0 +1,41 @@
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.kiri {
+    height:100vh;
+    background-color: #0e054b;
+    
+}
+.kanan {
+    height:100vh;
+    background-color: #ffffff;
+}
+
+.tulisan {
+    margin-top: 230px;
+    color:#ffffff;
+    font-weight:900;
+    font-size:67px;
+    letter-spacing: 3px;
+}
+.tulisan2 {
+    margin-top: -20px;
+    margin-left: 140px;
+    color:#ffffff;
+    font-size:30px;
+    letter-spacing: 2px;
+}
+
+.tulisan_kanan {
+    margin-top: 100px;
+    columns: #000000;;
+    font-weight:900;
+    font-size:45px;
+    letter-spacing: 3px;
+}
+.tulisan_kanan2 {
+    margin-top: -20px;
+    letter-spacing: 2px;
+    columns: #000000;;
+    font-size:20px;
+}
