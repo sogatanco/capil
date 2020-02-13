@@ -1,0 +1,10 @@
+.navbar-brand img{
+    width: 100px;
+}
+
+/* desktop version */
+@media(min-width:992px){
+    .navbar-brand img{
+        width: 200px;
+    }
+}
