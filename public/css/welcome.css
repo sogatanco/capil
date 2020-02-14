@@ -1,10 +1,29 @@
 .navbar-brand img{
     width: 100px;
 }
+.navbar{
+    background-color: #0E054B !important;
+}
+.jumbotron{
+    margin-top: -35px;
+    height:200px;
+}
+
 
 /* desktop version */
 @media(min-width:992px){
     .navbar-brand img{
-        width: 200px;
+        width: 240px;
+    }
+    .jumbotron{
+        margin-top: -100px;
+        height:800px;
+    }
+    .navbar{
+        background-color: transparent !important;
+    }
+    .big-title{
+        margin-top: 200px;
+        color: #ffffff;
     }
 }
