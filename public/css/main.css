@@ -1,0 +1,44 @@
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.navbar {
+ background-color : #0e054b !important;
+    
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #0e054b;
+    color: white;
+    text-size-adjust: 50px;
+    margin-top: 20px;
+    padding-top: 10px;
+  }
+
+  .akte {
+    padding-left: 300px;
+       
+   }
+
+   .kk {
+   margin-left: -160px;
+       
+   }
+
+   .text {
+    padding-left: 50px;
+    
+       
+   }
+   .text2 {
+    padding-left:180px;
+    
+       
+   }
+
+   
+
+ 
