@@ -1,22 +1,22 @@
 @extends('layouts.form')
 
-@section('title','Disdukcapil | Login Page')
+@section('title','Disdukcapil | Operator Login')
 
 @section('berang')
-<h1 class=" font-weight-bold">WELCOME BACK</h1>
-      <p class="mb-3">Silakan masuk dengan nomor KTP dan kata sandi anda !</p>
+<h1 class=" font-weight-bold">OPERATOR</h1>
+      <p class="mb-3">Silakan masuk dengan username dan password yang sesuai !</p>
       <form action="">
         <fieldset class="formRow">
             <div class="formRow--item">
-                <label for="nik" class="formRow--input-wrapper js-inputWrapper">
-                    <input type="text" class="formRow--input js-input" id="nik" placeholder="Nomor Induk Kependudukan">
+                <label for="username" class="formRow--input-wrapper js-inputWrapper">
+                    <input type="text" class="formRow--input js-input" id="username" placeholder="Username">
                 </label>
             </div>
         </fieldset>
         <fieldset class="formRow">
             <div class="formRow--item">
                 <label for="password" class="formRow--input-wrapper js-inputWrapper">
-                    <input type="password" class="formRow--input js-input" id="password" placeholder="Password">
+                    <input type="password" class="formRow--input js-input" id="pass" placeholder="Password">
                 </label>
             </div>
         </fieldset>

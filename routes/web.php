@@ -22,3 +22,11 @@ Route::get('/register', function () {
 Route::get('/login', function () {
     return view('login');
 });
+
+Route::get('/admin/login', function () {
+    return view('admin/login');
+});
+
+Route::get('/operator/login', function () {
+    return view('operator/login');
+});
