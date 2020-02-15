@@ -6,7 +6,7 @@ $(document).ready(function(){
          $( ".form1" ).animate({
             left: "+=50",
             height: "toggle"
-            }, 130, function() {
+            }, 1000, function() {
                 $(".form2").show();
             });
     });

@@ -6,8 +6,78 @@
 }
 .jumbotron{
     margin-top: -35px;
-    height:200px;
+    height:220px;
 }
+.big-title{
+    margin-top: 20px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+.tombol .btn{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 10px;
+}
+.step{
+    margin-top: -30px;
+    font-size: 10px;
+}
+
+.step img{
+    margin-bottom: 5px;
+    width: 100%;
+}
+.step p, .sponsor p{
+    line-height: 100%;
+    font-size: 8px;
+    color: #666666;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 170px;
+}
+
+.carousel-indicators .active{
+    background-color: #666666;
+}
+
+.carousel-indicators li {
+    background-color:#B1AEAE;
+}
+
+.carousel-caption{
+    color: #666666;
+    font-size: 12px;
+}
+
+.logo-sponsor{
+    height: 30px;
+    width: 30px;
+}
+
+.sponsor strong{
+    font-size: 12px;
+}
+.sponsor p i{
+    color: #666666;
+}
+.footer{
+    background-color: #0E054B ;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer-copyright{
+    color: #ffffff;
+    font-size: 10px;
+}
+
+.footer i{
+    font-size: 15px;
+}
+
 
 
 /* desktop version */
@@ -17,13 +87,76 @@
     }
     .jumbotron{
         margin-top: -100px;
-        height:800px;
+        height:820px;
     }
     .navbar{
         background-color: transparent !important;
     }
     .big-title{
-        margin-top: 200px;
+        margin-top: 150px;
         color: #ffffff;
+        font-size: 40px;
+        letter-spacing: 3px;
+    }
+    .tombol{
+        margin-top: 40px;
+    }
+    .tombol .btn{
+        border-radius: 10px 10px 10px 10px ;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        width: 180px;
+        margin-right: 10px!important;
+    }
+    .step{
+        font-size: 20px;
+    }
+    .step img{
+        width: 70%;
+        margin-bottom: 10px;
+    }
+    .step p, .sponsor p{
+        line-height: 100%;
+        font-size: 17px;
+        color: #666666;
+    }
+
+    .carousel-inner img {
+        width: 100%;
+        height: 250px;
+    }
+    .carousel-caption{
+        font-size: 18px;
+    }
+    .sponsor{
+        margin-top: 40px;
+    }
+    .sponsor strong{
+        font-size: 20px;
+    }
+    .sponsor p{
+        margin-bottom: 10px !important;
+    }
+    .logo-sponsor{
+        height: 70px;
+        width: 70px;
+    }
+    .footer{
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .footer-copyright{
+        color: #ffffff;
+        font-size: 15px;
+    }
+
+    .footer i{
+        font-size: 25px;
+        margin-right: 10px;
     }
 }
