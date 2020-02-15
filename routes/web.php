@@ -25,7 +25,12 @@ Route::get('/login', function () {
 Route::get('/navbar', function () {
     return view('navbar');
 });
-
+Route::get('/notifikasi', function () {
+    return view('notifikasi');
+});
+Route::get('/biodata', function () {
+    return view('biodata');
+});
 
 Route::get('/admin/login', function () {
     return view('admin/login');
