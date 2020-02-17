@@ -29,8 +29,8 @@
     <div class="container">
         <h1 class="big-title"><strong>Kependudukan</strong> dan <strong>Capil</strong> <br>dalam genggaman </h1>
         <div class="tombol">
-        <button type="button" class="btn btn-success mr-1">Getting Started</button>
-        <button type="button" class="btn btn-danger">Login</button>
+        <a href="{{url('register')}}" type="button" class="btn btn-success mr-1">Getting Started</a>
+        <a href="{{url('login')}}" type="button" class="btn btn-danger">Login</a>
         </div>
     </div>
 </div>
@@ -156,8 +156,6 @@
     </div>
   </div>
 </footer>
-
-
 
 </body>
 </html>

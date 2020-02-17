@@ -11,13 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PagesController@welcome');
 
-Route::get('/register', function () {
-    return view('register');
-});
+Route::get('/register', 'AuthController@register');
+Route::post('/register', 'AuthController@postRegister')->name('register');
+
+// Route::get('/login', 'AuthController@login');
+// Route::post('/login', 'AuthController@postLogin')->name('login');
 
 Route::get('/login', function () {
     return view('login');
