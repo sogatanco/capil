@@ -63,20 +63,6 @@
 .sponsor p i{
     color: #666666;
 }
-.footer{
-    background-color: #0E054B ;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.footer-copyright{
-    color: #ffffff;
-    font-size: 10px;
-}
-
-.footer i{
-    font-size: 15px;
-}
 
 
 
@@ -143,20 +129,5 @@
         height: 70px;
         width: 70px;
     }
-    .footer{
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
-    .footer-copyright{
-        color: #ffffff;
-        font-size: 15px;
-    }
-
-    .footer i{
-        font-size: 25px;
-        margin-right: 10px;
-    }
+  
 }

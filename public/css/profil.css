@@ -1,0 +1,14 @@
+.data{
+    text-transform: uppercase;
+}
+@media(min-width:992px){
+    .tombol .btn{
+        width: 140px!important;
+        letter-spacing: 2px;
+        border-radius: 20px;
+    }
+    .data{
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+}

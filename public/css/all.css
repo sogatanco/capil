@@ -10,6 +10,73 @@ h1{
     font-size: 20px;
 }
 
+
+/* footer */
+.footer{
+    background-color: #0E054B ;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer-copyright{
+    color: #ffffff;
+    font-size: 10px;
+}
+
+.footer i{
+    font-size: 15px;
+}
+
+/* navbar */
+.navbar{
+    background-color: #0E054B!important;
+}
+.navbar-brand img{
+    width: 100px;
+}
+.nav-link{
+    letter-spacing: 1px;
+}
+.badge-sonar {
+    display: inline-block;
+    background: #980303;
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+    position: absolute;
+    top: 3;
+  }
+  
+  .badge-sonar:after {
+    content: "";
+    position: absolute;
+    top: 3;
+    left: 0;
+    border: 2px solid #980303;
+    opacity: 0;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    animation: sonar 1.5s infinite;
+  }
+  .modal-content{
+    border-radius: 0px!important;
+    border: 0px;
+    padding: 10px;
+    box-shadow: 2px 2px  #00923F;
+}
+.modal-content .btn{
+    border: 2px #707070 solid;
+    border-radius: 10px;
+}
+
+/* form */
+.sogataform .form-control{
+    background-color: #F7F7F7;
+    text-transform: uppercase;
+}
+
+
 @media(min-width:992px){
     h2{
         letter-spacing: 2px;
@@ -18,5 +85,39 @@ h1{
     h1{
         letter-spacing: 3px;
         font-size: 40px;
+    }
+/* footer */
+    .footer{
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .footer-copyright{
+        color: #ffffff;
+        font-size: 15px;
+    }
+    .footer i{
+        font-size: 25px;
+        margin-right: 10px;
+    }
+
+    /* navabar */
+    .navbar-brand img{
+        width: 170px;
+    }
+    .navbar .nav-link{
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-left: 25px;
+    }
+    .modal-content{
+        padding: 50px;
+        box-shadow: 5px 5px  #00923F;
+    }
+
+    .modal-content ol{
+        font-size: 17px;
+        color: #666666;
     }
 }

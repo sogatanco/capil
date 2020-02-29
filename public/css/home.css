@@ -1,0 +1,56 @@
+.utama p strong{
+    text-transform: uppercase;
+}
+.utama p{
+    font-size: 10px;
+    line-height: 130%;
+    letter-spacing: 1px;
+}
+.utama{
+    margin-top: 50px;
+    height: 70vh;
+    position: relative;
+}
+.utama .field{
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+}
+.utama img{
+    width: 90px;
+    cursor: pointer;
+}
+/* modal */
+
+
+
+@media(min-width:992px){
+    .utama{
+        height: 73vh;
+        position: relative;
+    }
+
+    .utama img{
+        width: 270px;
+    }
+    .utama .field{
+        margin: 0;
+        position: absolute;
+        top: 40%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 100%;
+    }
+
+    .utama p{
+        margin-bottom: 50px;
+        font-size: 20px;
+        line-height: 130%;
+        letter-spacing: 1px;
+    }
+    /* modal */
+
+}

@@ -15,14 +15,22 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('email')->unique();
+            $table->string('nama', 100);
+            $table->string('nik')->unique();
             $table->string('password');
+            $table->string('tempat',100)->nullable();
+            $table->date('tgl_lahir')->nullable();
+            $table->char('agama',20)->nullable();
+            $table->char('jk',10)->nullable();
+            $table->string('pekerjaan',50)->nullable();
+            $table->string('gol_darah',3)->nullable();
+            $table->string('status',20)->nullable();
+            $table->string('alamat',150)->nullable();
+            $table->char('id_desa',3)->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
     }
-
     /**
      * Reverse the migrations.
      *

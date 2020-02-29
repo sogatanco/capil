@@ -1,0 +1,14 @@
+ul a{
+    letter-spacing: 1px;
+}
+#step-3 tbody{
+    text-transform: uppercase!important;
+}
+#step-2 .btn{
+    width: 60px!important;
+}
+@media(min-width:992px){
+    #step-2 .btn{
+        width: 80px!important;
+    }
+}
