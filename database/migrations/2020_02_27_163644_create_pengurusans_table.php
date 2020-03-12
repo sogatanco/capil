@@ -18,7 +18,8 @@ class CreatePengurusansTable extends Migration
             $table->string('nik');
             $table->string('jenis');
             $table->integer('data')->nullable();
-            $table->dateTime('verivikasi')->nullable();
+            $table->sting('status')->nullable();
+            $table->date('ambil')->nullable();
             $table->timestamps();
         });
     }

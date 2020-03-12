@@ -50,6 +50,7 @@ class UserController extends Controller
             'agama'=>$request->agama,
             'alamat'=>$request->alamat,
             'gol_darah'=>$request->gol_darah,
+            'pekerjaan'=>$request->pekerjaan,
             'status'=>$request->status,
             'id_desa'=>$request->desa
        ]);
@@ -245,6 +246,12 @@ class UserController extends Controller
     {
         $persyaratan=Persyaratan::where('nik', '=', \Auth::guard('web')->user()->nik)->first();
         return view('akte',['persyaratan'=> $persyaratan]);
+    }
+
+    public function riwayat()
+    {
+        $riwayat=Pengurusan::where('nik','=',\Auth::guard('web')->user()->nik)->get();
+        return view('riwayat', ['riwayat'=>$riwayat]);
     }
 
 }

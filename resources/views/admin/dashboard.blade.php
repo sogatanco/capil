@@ -1,149 +1,57 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
+@extends('layouts.admin')
 
-<!DOCTYPE html>
-<html lang="en">
+@section('title', 'Operator Disdukcapil | Dashboard')
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
-    <title>Sidebar template</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{url('css/dashboard.css')}}">
-    <script src="{{url('js/dashboard.js')}}"></script>
- 
+@section('adds')
+<link rel="stylesheet" href="{{url('css/dashboard.css')}}">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+<script src="{{url('js/dashboard.js')}}"></script>
+@endsection
 
-</head>
+@section('content')
 
-<body>
-<div class="page-wrapper chiller-theme toggled">
-  <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
-    <i class="fas fa-bars"></i>
-  </a>
-  <nav id="sidebar" class="sidebar-wrapper">
-    <div class="sidebar-content">
-      <div class="sidebar-brand">
-        <a href="#">Administrator</a>
-        <div id="close-sidebar">
-          <i class="fas fa-times"></i>
-        </div>
-      </div>
-      <div class="sidebar-header">
-        <!-- <div class="user-pic">
-          <img class="img-responsive img-rounded" src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"
-            alt="User picture">
-        </div> -->
-        <div class="user-info">
-          <span class="user-name">Jhon
-            <strong>Smith</strong>
-          </span>
-          <span class="user-role">Administrator</span>
-          <span class="user-status">
-            <i class="fa fa-circle"></i>
-            <span>Online</span>
-          </span>
-        </div>
-      </div>
-      <!-- sidebar-header  -->
-      <div class="sidebar-search">
-        <div>
-          <div class="input-group">
-            <input type="text" class="form-control search-menu" placeholder="Search...">
-            <div class="input-group-append">
-              <span class="input-group-text">
-                <i class="fa fa-search" aria-hidden="true"></i>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- sidebar-search  -->
-      <div class="sidebar-menu">
-        <ul>
-          <li class="header-menu">
-            <span>General</span>
-          </li>
-          <li class="sidebar-dropdown">
-            <a href="#">
-              <i class="fa fa-tachometer-alt"></i>
-              <span>Dashboard</span>
-              <span class="badge badge-pill badge-warning">New</span>
-            </a>
-            <div class="sidebar-submenu">
-              <ul>
-                <li>
-                  <a href="#">Dashboard 1
-                    <span class="badge badge-pill badge-success">Pro</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">Dashboard 2</a>
-                </li>
-                <li>
-                  <a href="#">Dashboard 3</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="sidebar">
-            <a href="#">
-              <i class="fas fa-tty"></i>
-              <span>Operator</span>
-              <span class="badge badge-pill badge-danger">3</span>
-            </a>
-            
-          <li class="sidebar">
-            <a href="#">
-              <i class="fab fa-accusoft"></i>
-              <span>Laporan</span>
-            </a>
-            
-          <li class="sidebar">
-            <a href="#">
-              <i class="fas fa-sign-out-alt"></i>
-              <span>Keluar</span>
-            </a>
-        </li>
-      </div>
-      </div>
-            
-    <!-- sidebar-content  -->
-              <div class="sidebar-footer ">
-                <a href="#">
-                
-                  <i class="fa fa-bell"></i>
-                  <span class="badge badge-pill badge-warning notification">3</span>
-                </a>
-                <a href="#">
-                  <i class="fa fa-envelope"></i>
-                  <span class="badge badge-pill badge-success notification">7</span>
-                </a>
-                <a href="#">
-                  <i class="fa fa-cog"></i>
-                  <span class="badge-sonar"></span>
-                </a>
-                <a href="#">
-                  <i class="fa fa-power-off"></i>
-                </a>
-                </div>
-             
-            </nav>
-  
-  <!-- sidebar-wrapper  -->
- <!-- content here -->
-<!-- page-wrapper -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    
-</body>
+      <h2>Dashboard</h2>
+      <hr>
 
-</html>
+
+      <div class="row">
+    <div class="col-md-3">
+      <div class="card-counter primary">
+        <i class="fas fa-file-alt"></i>
+        <span class="count-numbers" id="jmobil">{{count($kk)}}</span>
+        <span class="count-name">KK</span>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card-counter danger">
+        <i class="fas fa-id-card"></i>
+        <span class="count-numbers" id="jmotor">{{count($ktp)}}</span>
+        <span class="count-name">KTP</span>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card-counter success">
+        <i class="fas fa-folder-open"></i>
+        <span class="count-numbers junapprove">{{count($akte)}}</span>
+        <span class="count-name">Akte</span>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card-counter info">
+        <i class="fas fa-users"></i>
+        <span class="count-numbers" id="juser">{{count($user)}}</span>
+        <span class="count-name">Users</span>
+      </div>
+    </div>
+  </div>
+
+<div class="chart mt-4">
+  <h4>Data seminggu terakhir</h4>
+<canvas id="myChart" width="500" height="250"></canvas>
+</div>
+
+
+@endsection

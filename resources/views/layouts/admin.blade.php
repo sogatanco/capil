@@ -33,9 +33,9 @@
         </div>
         <div class="user-info">
           <span class="user-name">Mr.
-            <strong>{{\Auth::guard('operator')->user()->nama}}</strong>
+            <strong>{{\Auth::guard('admin')->user()->username}}</strong>
           </span>
-          <span class="user-role">Operator</span>
+          <span class="user-role">Administrator</span>
           <span class="user-status">
             <i class="fa fa-circle"></i>
             <span>Online</span>
@@ -51,54 +51,40 @@
             <span>Menu</span>
           </li>
           <li >
-            <a href="{{url('operator')}}">
+            <a href="{{url('admin')}}">
               <i class="fa fa-tachometer-alt"></i>
               <span>Dashboard</span>
+            </a>
+          </li>
+          <li >
+            <a href="{{url('admin/operator')}}">
+              <i class="fas fa-cogs"></i>
+              <span>Operator</span>
             </a>
           </li>
           <li class="sidebar-dropdown">
             <a href="#">
               <i class="fas fa-eye"></i>
-              <span>Review</span>
-              <span class="badge badge-pill badge-warning">new</span>
+              <span>Pengurusan</span>
             </a>
             <div class="sidebar-submenu">
               <ul>
                 <li>
-                  <a href="{{url('operator/review/ktp')}}">Kartu Tanda Penduduk
+                  <a href="{{url('admin/pengurusan/ktp')}}">Kartu Tanda Penduduk
 
                   </a>
                 </li>
                 <li>
-                  <a href="{{url('operator/review/kk')}}">Kartu Keluarga</a>
+                  <a href="{{url('admin/pengurusan/kk')}}">Kartu Keluarga</a>
                 </li>
                 <li>
-                  <a href="{{url('operator/review/akte')}}">Akte Kelahiran</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="sidebar-dropdown">
-            <a href="#">
-              <i class="fas fa-cogs"></i>
-              <span>Process</span>
-            </a>
-            <div class="sidebar-submenu">
-              <ul>
-                <li>
-                  <a href="{{url('operator/process/ktp')}}">Kartu Tanda Penduduk</a>
-                </li>
-                <li>
-                  <a href="{{url('operator/process/kk')}}">Kartu Keluarga</a>
-                </li>
-                <li>
-                  <a href="{{url('operator/process/akte')}}">Akte Kelahiran</a>
+                  <a href="{{url('admin/pengurusan/akte')}}">Akte Kelahiran</a>
                 </li>
               </ul>
             </div>
           </li>
           <li >
-            <a href="{{url('operator/logout')}}">
+            <a href="{{url('admin/logout')}}">
               <i class="fas fa-power-off"></i>
               <span>Log Out</span>
             </a>

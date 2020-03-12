@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="{{url('css/app.css')}}">
     <link rel="stylesheet" href="{{url('css/all.css')}}">
     <script src="{{url('js/app.js')}}"></script>
-    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700i,900&display=swap" rel="stylesheet"> -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700i,900&display=swap" rel="stylesheet">
     <title>@yield('title')</title>
     @yield('adds')
 </head>
@@ -33,7 +33,7 @@
           <a class="nav-link" href="{{url('home')}}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Notifikasi  <span class="badge-sonar"></span></a>
+          <a class="nav-link" href="{{url('riwayat')}}">Riwayat  <span class="badge-sonar"></span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{url('profil')}}">Profil</a>

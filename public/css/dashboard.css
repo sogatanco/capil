@@ -54,3 +54,8 @@
     display: block;
     font-size: 18px;
   }
+
+  .chart{
+      background-color: white;
+      padding: 15px;
+  }
